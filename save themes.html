@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+
+<html>  
+    <body bgcolor="aqua">  
+        <script type="text/javascript">
+
+function lightFunction() {
+ localStorage.pagetheme="light theme ";  
+document.getElementById("val").innerHTML= localStorage.pagetheme;
+}  
+function darkFunction() {
+ localStorage.pagetheme="dark theme"; 
+document.getElementById("val").innerHTML= localStorage.pagetheme;
+}  
+
+document.write("Selected user theme is  " + localStorage.pagetheme );  
+
+</script>  
+        <p>This page saves last selected theme <h3 id="val" > </h3> </p>  
+<button id= "light" onclick="lightFunction()"> light theme </button>
+<button  id= "dark" onclick="darkFunction()"> dark theme </button>
+
+    </body>  
+</html> 
